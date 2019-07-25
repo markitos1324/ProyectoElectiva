@@ -10,22 +10,28 @@ export class ListPage implements OnInit {
   
   public items= [
     {title: 'General',
+    //mision vision +relleno
     url: '/general',
     },
     {title: 'Pensum',
+    //semestres
       url: '/pensum',
     },
-    {title: 'otra que no se que poner',
-      url: '/',
+    {title: 'Ubicación',
+    //api google escuela maps
+      url: '/ubicacion',
     },
-    {title: 'alv nos falta 1 mas',
-      url: '/',
+    {title: 'Grupos de investigación',
+    //lista de grupos de investigacion
+      url: '/grupos',
     },
-    {title: 'con 5 vasta no?',
-      url: '/',
+    {title: 'Personal escuela',
+    // director, profesores etc.
+      url: '/personal',
     },
-    {title: 'una mas no hace daño',
-      url: '/',
+    {title: 'Informacion de contacto',
+    //grupo face y wtp
+      url: '/informacion',
     },
   ];
   constructor() {
