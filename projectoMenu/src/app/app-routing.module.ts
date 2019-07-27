@@ -20,7 +20,8 @@ const routes: Routes = [
   { path: 'ubicacion', loadChildren: './ubicacion/ubicacion.module#UbicacionPageModule' },
   { path: 'grupos', loadChildren: './grupos/grupos.module#GruposPageModule' },
   { path: 'personal', loadChildren: './personal/personal.module#PersonalPageModule' },
-  { path: 'informacion', loadChildren: './informacion/informacion.module#InformacionPageModule' }
+  { path: 'informacion', loadChildren: './informacion/informacion.module#InformacionPageModule' },
+  { path: 'image-full-screen', loadChildren: './image-full-screen/image-full-screen.module#ImageFullScreenPageModule' }
 ];
 
 @NgModule({

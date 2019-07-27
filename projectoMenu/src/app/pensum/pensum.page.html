@@ -10,5 +10,9 @@
 </ion-header>
 
 <ion-content>
-  <a href="https://ionicacademy.com/ionic-4-image-gallery-zoom/">click me:)</a>
+  <ion-slides [options]="sliderOpts">
+    <ion-slide *ngFor="let img of items">
+      <img src="./assets/Pensum/{{ img }}.PNG" tappable (click)="openPreview(img)">
+    </ion-slide>
+  </ion-slides>
 </ion-content>
