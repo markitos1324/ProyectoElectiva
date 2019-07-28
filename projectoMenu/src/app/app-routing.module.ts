@@ -21,7 +21,11 @@ const routes: Routes = [
   { path: 'grupos', loadChildren: './grupos/grupos.module#GruposPageModule' },
   { path: 'personal', loadChildren: './personal/personal.module#PersonalPageModule' },
   { path: 'informacion', loadChildren: './informacion/informacion.module#InformacionPageModule' },
-  { path: 'image-full-screen', loadChildren: './image-full-screen/image-full-screen.module#ImageFullScreenPageModule' }
+  { path: 'image-full-screen', loadChildren: './image-full-screen/image-full-screen.module#ImageFullScreenPageModule' },  { path: 'infelcom', loadChildren: './infelcom/infelcom.module#InfelcomPageModule' },
+  { path: 'gimi', loadChildren: './gimi/gimi.module#GimiPageModule' },
+  { path: 'gis', loadChildren: './gis/gis.module#GISPageModule' },
+  { path: 'telematics', loadChildren: './telematics/telematics.module#TelematicsPageModule' }
+
 ];
 
 @NgModule({
