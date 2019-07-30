@@ -10,6 +10,8 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ImageFullScreenPageModule } from './image-full-screen/image-full-screen.module';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -17,7 +19,8 @@ import { ImageFullScreenPageModule } from './image-full-screen/image-full-screen
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    ImageFullScreenPageModule
+    ImageFullScreenPageModule,
+    HttpClientModule
   ],
   providers: [
     StatusBar,
