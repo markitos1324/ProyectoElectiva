@@ -42,10 +42,67 @@ const telematic = {
     "descripcion": "TelemaTICs Grupo de Investigación en Telemática y TIC aplicada a la educación, desarrolla procesos de investigación e innovación centrados en el uso y aprovechamiento de la tecnología telemática para beneficiar a la sociedad, academia y entorno, fundamentalmente desde el aspecto educacional."
 };
 
+const profesores = [{
+   "nombre": "Jorge Enrique Otálora Luna",
+   "correo": "jorge.otalora@uptc.edu.co"
+    },{
+    "nombre": "GUSTAVO CÁCERES CASTELLANOS",
+    "correo": "gustavo.caceres@uptc.edu.co"
+    },{
+    "nombre": "JORGE ENRIQUE QUEVEDO REYES ",
+    "correo": "jorge.quevedo@uptc.edu.co"
+    },{
+    "nombre": "Jorge Enrique Otálora Luna",
+    "correo": "jorge.otalora@uptc.edu.co "
+    },{
+    "nombre": "JUAN JOSÉ CAMARGO VEGA ",
+    "correo": "jjcamargo@uptc.edu.co "
+    },{
+    "nombre": "MAURO CALLEJAS CUERVO ",
+    "correo": "mauro.callejas@uptc.edu.co"
+    },{
+    "nombre": "MIGUEL ÁNGEL MENDOZA MORENO",
+    "correo": "miguel.mendoza@uptc.edu.co"
+    },{
+    "nombre": "ALEXANDER CASTRO ROMERO",
+    "correo": "alexander.castro01@uptc.edu.co"
+    },{
+    "nombre": "BEATRIZ CALLEJAS CUERVO",
+    "correo": "beatriz.callejas@uptc.edu.co"
+    },{
+    "nombre": "HELVER AGUSTO VALERO BUSTOS",
+    "correo": "helver.valero@uptc.edu.co"
+    },{
+    "nombre": "JORGE GABRIEL HOYOS PINEDA",
+    "correo": "jorge.hoyos@uptc.edu.co"
+    },{
+    "nombre": "JUAN SEBASTIÁN GONZÁLEZ SANABRIA",
+    "correo": "juansebastian.gonzalez@uptc.edu.co"
+    },{
+    "nombre": "OMAIRA ISABEL GALINDO PARRA",
+    "correo": "omaira.galindo@uptc.edu.co"
+    },{
+    "nombre": "MAURO ASDRUBAL PITA PUERTO",
+    "correo": "mauro.pita@uptc.edu.co"
+    },{
+    "nombre": "DEISY JOHANA DÍAZ PÉREZ",
+    "correo": "deisy.diaz03@uptc.edu.co"
+    },{
+    "nombre": "CARLOS FERNANDO ARENAS FONSECA",
+    "correo": "carlos.arenas@uptc.edu.co"
+    },{
+    "nombre": "Alex Puertas Gonzalez",
+    "correo": "alex.puertas@uptc.edu.co"
+}];
+
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
+});
+
+app.get('/profesores', function (req, res) {
+    res.send(profesores);
 });
 
 app.get('/principal', function (req, res) {
