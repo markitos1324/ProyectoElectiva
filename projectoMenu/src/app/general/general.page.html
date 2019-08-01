@@ -10,36 +10,56 @@
 </ion-header>
 
 <ion-content *ngFor="let a of general">
-    <ion-card-header>
-        <ion-card-title>Misión</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-        <label> {{a.mision}} </label>
-    </ion-card-content>
-    <ion-card-header>
-        <ion-card-title>Visión</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
-        <p>{{a.vision}}</p>
-    </ion-card-content>
-    <ion-card-header>
-        <ion-card-title>Objetivos</ion-card-title>
-    </ion-card-header>
-    <ion-card-content>
+    <ion-card color="medium">
         <ion-card-header>
-            <ion-card-title>General</ion-card-title>
+            <ion-card-title>
+                <h1>Misión</h1>
+            </ion-card-title>
+        </ion-card-header>
+        <ion-card-content class="ion-text-justify">
+            <label> {{a.mision}} </label>
+        </ion-card-content>
+    </ion-card>
+    <ion-card color="warning">
+        <ion-card-header>
+            <ion-card-title>
+                <h1>Visión</h1>
+            </ion-card-title>
+        </ion-card-header>
+        <ion-card-content class="ion-text-justify">
+            <p>{{a.vision}}</p>
+        </ion-card-content>
+    </ion-card>
+    <ion-card color="dark">
+        <ion-card-header>
+            <ion-card-title>
+                <h1>Objetivos</h1>
+            </ion-card-title>
         </ion-card-header>
         <ion-card-content>
-            <p>{{a.objetivos.general}}</p>
+            <ion-card color="medium">
+                <ion-card-header>
+                    <ion-card-title>
+                        <h2>Generales</h2>
+                    </ion-card-title>
+                </ion-card-header>
+                <ion-card-content class="ion-text-justify">
+                    <p>{{a.objetivos.general}}</p>
+                </ion-card-content>
+            </ion-card>
+            <ion-card color="warning">
+                <ion-card-header>
+                    <ion-card-title>
+                        <h2>Específicos</h2>
+                    </ion-card-title>
+                </ion-card-header>
+                <ion-card-content class="ion-text-justify">
+                    <p>{{a.objetivos.especificos.primero}}</p>
+                    <p>{{a.objetivos.especificos.segundo}}</p>
+                    <p>{{a.objetivos.especificos.tercero}}</p>
+                    <p>{{a.objetivos.especificos.cuarto}}</p>
+                </ion-card-content>
+            </ion-card>
         </ion-card-content>
-        <ion-card-header>
-            <ion-card-title>Específicos</ion-card-title>
-        </ion-card-header>
-        <ion-card-content>
-            <p>{{a.objetivos.especificos.primero}}</p>
-            <p>{{a.objetivos.especificos.segundo}}</p>
-            <p>{{a.objetivos.especificos.tercero}}</p>
-            <p>{{a.objetivos.especificos.cuarto}}</p>
-        </ion-card-content>
-    </ion-card-content>
+    </ion-card>
 </ion-content>

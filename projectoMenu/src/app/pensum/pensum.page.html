@@ -9,10 +9,66 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content>
-    <ion-slides [options]="sliderOpts">
-        <ion-slide *ngFor="let img of items">
-            <img src="./assets/Pensum/{{ img }}.PNG" tappable (click)="openPreview(img)">
-        </ion-slide>
-    </ion-slides>
+<ion-content fullscreen>
+    <ion-card color="warning">
+        <ion-card-header>
+            <ion-card-title>
+                <h1>Materias por semestre</h1>
+            </ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-slides [options]="sliderOpts">
+                <ion-slide *ngFor="let img of items">
+                    <img src="./assets/Pensum/{{ img }}.PNG" style="width: 246px; height: 191px;" tappable (click)="openPreview(img)">
+                </ion-slide>
+            </ion-slides>
+        </ion-card-content>
+    </ion-card>
+    <ion-card color="dark">
+        <ion-card-header>
+            <ion-card-title>
+                <h1>Caracteristicas generales</h1>
+            </ion-card-title>
+        </ion-card-header>
+        <ion-card-content class="ion-text-justify">
+            <ion-list>
+                <ion-item color="medium">
+                    <ion-label>
+                        <h3>Duración del programa</h3>
+                        <p>DIEZ (10) SEMESTRES</p>
+                    </ion-label>
+                </ion-item>
+                <ion-item color="medium">
+                    <ion-label>
+                        <h3>Número de créditos académicos</h3>
+                        <p>CIENTO SETENTA Y CINCO (175)</p>
+                    </ion-label>
+                </ion-item>
+                <ion-item color="medium">
+                    <ion-label>
+                        <h3>Numero total de asignaturas</h3>
+                        <p>CUARENTA Y NUEVE (49)</p>
+                    </ion-label>
+                </ion-item>
+                <ion-item color="medium">
+                    <ion-label>
+                        <h3>Titulo que otorga</h3>
+                        <p>INGENIERO DE SISTEMAS Y COMPUTACIÓN</p>
+                    </ion-label>
+                </ion-item>
+                <ion-item color="medium">
+                    <ion-label>
+                        <h3>Jornada</h3>
+                        <p>EXTENDIDA</p>
+                    </ion-label>
+                </ion-item>
+                <ion-item color="medium">
+                    <ion-label>
+                        <h3>Periodicidad de admisión</h3>
+                        <p>SEMESTRAL</p>
+                    </ion-label>
+                </ion-item>
+            </ion-list>
+        </ion-card-content>
+    </ion-card>
 </ion-content>

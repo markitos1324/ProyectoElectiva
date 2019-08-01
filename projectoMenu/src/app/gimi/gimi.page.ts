@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BackendService } from '../backend.service';
 
 @Component({
   selector: 'app-gimi',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GimiPage implements OnInit {
 
-  constructor() { }
+  gimi: any;
+  constructor(public service: BackendService) { }
 
   ngOnInit() {
+    this.service.getGimi().subscribe(data => {
+      this.gimi = [data]
+      console.log(this.gimi);
+    });
   }
 
 }

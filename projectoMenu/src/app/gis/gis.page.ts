@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BackendService } from '../backend.service';
 
 @Component({
   selector: 'app-gis',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GISPage implements OnInit {
 
-  constructor() { }
+  gis: any;
+  constructor(public service: BackendService) { }
 
   ngOnInit() {
+    this.service.getGis().subscribe(data => {
+      this.gis = [data];
+    })
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BackendService } from '../backend.service';
 
 @Component({
   selector: 'app-telematics',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TelematicsPage implements OnInit {
 
-  constructor() { }
+  telematics: any;
+  constructor(public service: BackendService) { }
 
   ngOnInit() {
+    this.service.getTelematic().subscribe(data =>{
+      this.telematics = [data];
+    })
   }
 
 }

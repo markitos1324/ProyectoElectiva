@@ -1,5 +1,7 @@
 {
   "name": "projectoMenu",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

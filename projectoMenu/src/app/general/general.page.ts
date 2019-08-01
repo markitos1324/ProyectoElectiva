@@ -14,7 +14,6 @@ export class GeneralPage implements OnInit {
   ngOnInit() {
     this.service.getGeneral().subscribe(data =>{
       this.general = [data];
-      console.log(this.general);
     });
   }
 

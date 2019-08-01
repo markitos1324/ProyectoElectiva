@@ -15,10 +15,29 @@ export class AppComponent {
       url: '/home',
       icon: 'home'
     },
-    {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
+    {title: 'General',
+    url: '/general',
+    icon: 'information-circle-outline'
+    },
+    {title: 'Pensum',
+      url: '/pensum',
+      icon:'podium'
+    },
+    {title: 'Ubicación',
+      url: '/ubicacion',
+      icon: 'map'
+    },
+    {title: 'Grupos de investigación',
+      url: '/grupos',
+      icon: 'flask'
+    },
+    {title: 'Personal escuela',
+      url: '/personal',
+      icon: 'contacts'
+    },
+    {title: 'Informacion de contacto',
+      url: '/informacion',
+      icon: 'chatboxes'
     }
   ];
 

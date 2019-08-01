@@ -9,18 +9,16 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content fullscreen>
-    <ion-card>
+<ion-content fullscreen *ngFor="let a of infelcom">
+    <ion-card color="medium">
         <img src="/assets/GrupInv/infelcom.jpg" />
         <ion-card-header>
-            <ion-card-title>GRUPO DE INVESTIGACIÓN EN INFORMÁTICA, ELECTRÓNICA Y COMUNICACIONES</ion-card-title>
+            <ion-card-title>{{a.title}}</ion-card-title>
             <ion-card-subtitle color="black">Descripción</ion-card-subtitle>
         </ion-card-header>
         <ion-card-content class="ion-text-justify">
             <ion-label>
-                El Grupo de Investigación en Informática, Electrónica y Comunicaciones de la Universidad Pedagógica y Tecnológica de Colombia, es una comunidad conformada básicamente por estudiantes y docentes del programa de Ingeniería de Sistemas y Computación, conscientes
-                que el área de la Teleinformática es fundamental para las pretensiones cognitivas y de aplicación profesional y disciplinar.<br> La citada comunidad reconoce su responsabilidad por profundizar y generar soluciones innovadoras
-                en el área de las Redes de Datos, Comunicaciones y actividades de gestión de recursos computacionales dispuestos en una organización tan simple como una empresa y tan compleja como la misma Internet.
+                {{a.descripcion}}
             </ion-label>
         </ion-card-content>
     </ion-card>

@@ -9,20 +9,15 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content>
-    <ion-card>
+<ion-content *ngFor="let a of gimi">
+    <ion-card color="medium">
         <img src="/assets/GrupInv/gimi.jpg" />
         <ion-card-header>
-            <ion-card-title>Grupo Investigación en Manejo de Información</ion-card-title>
+            <ion-card-title>{{a.title}}</ion-card-title>
             <ion-card-subtitle color="black">Descripción</ion-card-subtitle>
         </ion-card-header>
         <ion-card-content class="ion-text-justify">
-            <ion-label>
-                Históricamente el manejo de la información siempre ha sido uno de las temáticas fundamentales de la humanidad, ya que toda cotidianidad exige la clasificación, almacenamiento, búsqueda y transporte de información. Esta información que inicia como dato
-                básico, se va transformado en información para clasificar y cualificar cualquier elemento con el que se relacione los procesos de la humanidad. Las soluciones de la anterior problemática iniciaron por archivos planos, imágenes, documentos
-                en cualquier medio, pasando por las bases de datos como un conjunto de información almacenada. Las bases de datos como una de los esquemas más relevantes de manejo de información estructurada, surgen desde mediados de los años sesenta
-                y han marcado la línea de investigación por muchos años, ahora se encuentran los modelos orientados a objetos.
-            </ion-label>
+            <ion-label> {{a.descripcion}}</ion-label>
         </ion-card-content>
     </ion-card>
 

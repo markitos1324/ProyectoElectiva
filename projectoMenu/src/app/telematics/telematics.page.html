@@ -9,17 +9,16 @@
     </ion-toolbar>
 </ion-header>
 
-<ion-content>
-    <ion-card>
+<ion-content *ngFor="let a of telematics">
+    <ion-card color="medium">
         <img src="/assets/GrupInv/telematics.png" />
         <ion-card-header>
-            <ion-card-title>Grupo de Investigación en Telemática y TIC aplicada a la Educación</ion-card-title>
+            <ion-card-title>{{a.title}}</ion-card-title>
             <ion-card-subtitle color="black">Descripción</ion-card-subtitle>
         </ion-card-header>
         <ion-card-content class="ion-text-justify">
             <ion-label>
-                TelemaTICs Grupo de Investigación en Telemática y TIC aplicada a la educación, desarrolla procesos de investigación e innovación centrados en el uso y aprovechamiento de la tecnología telemática para beneficiar a la sociedad, academia y entorno, fundamentalmente
-                desde el aspecto educacional.
+                {{a.descripcion}}
             </ion-label>
         </ion-card-content>
     </ion-card>
