@@ -9,7 +9,6 @@ export class BackendService {
 
   constructor(public httpClient: HttpClient) { }
 
-  
   getPrincipal() {  
     return this.httpClient.get('http://' + myip + '/principal');
   }

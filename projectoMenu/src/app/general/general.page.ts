@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BackendService } from '../backend.service'
 
 @Component({
   selector: 'app-general',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GeneralPage implements OnInit {
 
-  constructor() { }
+  general: any;
+  constructor(public service: BackendService) { }
 
   ngOnInit() {
+    this.service.getGeneral().subscribe(data =>{
+      this.general = [data];
+      console.log(this.general);
+    });
   }
 
 }
